@@ -823,6 +823,7 @@
   position: relative;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  text-transform: uppercase;
 }
 .methodology_orange_block a:hover {
   background: #fff;
@@ -2081,6 +2082,9 @@
 .methodology_orange.grade h2 br {
   display: none;
 }
+.methodology_orange.grade a {
+  margin-top: 64px;
+}
 
 @media (min-width: 768px) {
   .methodology_orange.grade h2 {
@@ -2092,6 +2096,9 @@
   .methodology_orange.grade .methodology_orange_block img {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px);
+  }
+  .methodology_orange.grade a {
+    margin-top: 40px;
   }
 }
 @media (min-width: 992px) {
