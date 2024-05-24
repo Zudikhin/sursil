@@ -1627,9 +1627,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1653,7 +1653,7 @@
           box-sizing: border-box;
   border-radius: 50%;
   background: rgb(28, 126, 123);
-  margin-left: 6px;
+  margin-left: 10px;
   position: relative;
   padding: 6px;
 }
@@ -1729,6 +1729,13 @@
   line-height: 15px;
   border: 1px solid black;
   padding: 5px;
+}
+@media (min-width: 576px) {
+  .against_accordion_list_item_head {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 @media (min-width: 768px) {
   .against_accordion {
