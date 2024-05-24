@@ -133,7 +133,7 @@
   margin-top: 0px;
 }
 .against_main_text p b {
-  font-family: GilroyBold;
+  font-family: GilroyBold, sans-serif;
 }
 @media (min-width: 768px) {
   .against_main_grey {
@@ -270,7 +270,7 @@
   margin-top: 40px;
 }
 .against_pain_top p {
-  font-family: Gilroy;
+  font-family: GilroyRegular, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -305,7 +305,7 @@
   display: none;
 }
 .against_pain_main_info p {
-  font-family: Gilroy;
+  font-family: GilroyRegular, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -339,7 +339,7 @@
 }
 .against_pain_main_step_item_text span {
   min-width: 20px;
-  font-family: Gilroy;
+  font-family: GilroyBold, sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -347,7 +347,7 @@
   color: rgb(255, 140, 39);
 }
 .against_pain_main_step_item_text p {
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 22.4px;
@@ -363,7 +363,7 @@
   margin-top: 30px;
 }
 .against_pain_main_text {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 22.4px;
@@ -571,7 +571,7 @@
   background: rgb(147, 147, 147);
 }
 .against_where_wrap_block_text p {
-  font-family: Gilroy;
+  font-family: GilroyRegular, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22.4px;
@@ -605,7 +605,7 @@
           order: 1;
 }
 .against_where_wrap_down_name p {
-  font-family: Gilroy;
+  font-family: GilroyRegular, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
@@ -613,7 +613,7 @@
   color: #fff;
 }
 .against_where_wrap_down_name h4 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 27px;
@@ -625,7 +625,7 @@
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
-  font-family: Gilroy;
+  font-family: GilroyRegular, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -783,7 +783,7 @@
   margin-top: 20px;
 }
 .against_construction_block_item p {
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -815,7 +815,7 @@
   border: 2px solid rgb(255, 140, 39);
 }
 .against_construction_block_item_img_num span {
-  font-family: Gilroy;
+  font-family: GilroyBold, sans-serif;
   font-size: 40px;
   font-weight: 700;
   line-height: 60px;
@@ -900,7 +900,7 @@
   overflow: hidden;
 }
 .against_range_block_text h2 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 24px;
   font-weight: 800;
   line-height: 36px;
@@ -908,7 +908,7 @@
   color: rgb(12, 12, 12);
 }
 .against_range_block_text p {
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 27px;
@@ -918,7 +918,7 @@
   margin-top: 10px;
 }
 .against_range_block_text p b {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 27px;
@@ -1132,7 +1132,7 @@
   margin-top: 90px;
 }
 .against_showing_block h2 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 24px;
   font-weight: 800;
   line-height: 36px;
@@ -1140,7 +1140,7 @@
   color: rgb(12, 12, 12);
 }
 .against_showing_block_text {
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -1188,7 +1188,7 @@
           justify-content: center;
 }
 .against_showing_block_item_text p {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 21px;
@@ -1274,7 +1274,7 @@
   margin-top: 90px;
 }
 .against_model h2 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 24px;
   font-weight: 800;
   line-height: 36px;
@@ -1309,7 +1309,7 @@
   padding: 0px 40px;
 }
 .against_model_item_head p {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 28px;
@@ -1344,7 +1344,7 @@
   height: 60px;
   line-height: 60px;
   text-align: center;
-  font-family: Gilroy;
+  font-family: GilroyBold, sans-serif;
   font-size: 26px;
   font-weight: 700;
   background: rgb(234, 148, 87);
@@ -1389,7 +1389,7 @@
   padding: 20px 15px 15px 15px;
 }
 .against_model_link_text p {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 21px;
@@ -1423,7 +1423,7 @@
   font-weight: 800;
   line-height: 27px;
   text-align: left;
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   text-transform: uppercase;
   margin-top: 50px;
 }
@@ -1434,7 +1434,7 @@
   color: rgb(28, 126, 123);
 }
 .against_model_text {
-  font-family: Gilroy;
+  font-family: GilroyRegular, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 22.4px;
@@ -1607,7 +1607,7 @@
   margin-top: 70px;
 }
 .against_accordion_title h2 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 24px;
   font-weight: 800;
   line-height: 36px;
@@ -1855,7 +1855,7 @@
   padding: 20px;
 }
 .against_compensation_block_text p {
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -2010,7 +2010,7 @@
   padding: 24px 30px;
 }
 .against_cats_item_text p {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -2132,7 +2132,7 @@
   text-align: center;
 }
 .against_review_block_wrap p {
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -2208,7 +2208,7 @@
   padding: 15px;
 }
 .against_review_block_slider_item_text h5 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 27px;
@@ -2216,7 +2216,7 @@
   color: #fff;
 }
 .against_review_block_slider_item_text p {
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -2429,7 +2429,7 @@
   position: relative;
 }
 .against_order_block_top h2 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 24px;
@@ -2448,7 +2448,7 @@
   position: absolute;
   right: 20px;
   bottom: 6px;
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 56px;
   font-weight: 800;
   line-height: 84px;
@@ -2484,7 +2484,7 @@
 }
 .against_order_block_main_text {
   width: 100%;
-  font-family: Gilroy;
+  font-family: GilroyMedium, sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 22.4px;
@@ -2568,7 +2568,7 @@
   position: relative;
 }
 .against_order_block_main_call h4 {
-  font-family: Gilroy;
+  font-family: GilroyExtraBold, sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 27px;
@@ -2577,7 +2577,7 @@
   text-transform: uppercase;
 }
 .against_order_block_main_call a {
-  font-family: Gilroy;
+  font-family: GilroyRegular, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 27px;
