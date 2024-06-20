@@ -1,7 +1,7 @@
 $(document).ready(function() {
     "use strict";
 
-    $(".against_accordion_list_item_head").click(function() {
+    $(".exercises_accordion_list_item_head").click(function() {
         $(this).toggleClass("active");
         $(this).siblings().slideToggle()
     });
@@ -22,6 +22,10 @@ $(document).ready(function() {
             }
           }
         ]
+    });
+
+    $('.exercises_map_block_iframe').magnificPopup({
+      type:'iframe'
     });
 
 });
