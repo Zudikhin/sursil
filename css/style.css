@@ -1,12 +1,12 @@
-.exercises {
+.walk {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 46px 0px 80px 0px;
 }
-.exercises p {
+.walk p {
   margin-bottom: 0px;
 }
-.exercises h2 {
+.walk h2 {
   font-family: GilroyExtraBold, sans-serif;
   font-size: 24px;
   font-weight: 800;
@@ -17,93 +17,173 @@
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .exercises {
+  .walk {
     padding: 70px 0px 80px 0px;
   }
-  .exercises h2 {
+  .walk h2 {
     font-size: 40px;
     line-height: 60px;
   }
 }
 @media (min-width: 992px) {
-  .exercises {
+  .walk {
     padding: 78px 0px 80px 0px;
   }
-  .exercises h2 {
+  .walk h2 {
     font-size: 40px;
     line-height: 60px;
   }
 }
 @media (min-width: 1200px) {
-  .exercises h2 {
+  .walk h2 {
     font-size: 40px;
     line-height: 60px;
   }
 }
-.exercises_main_block {
+.walk_main_left {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: relative;
   background: rgb(239, 239, 239);
-  padding: 30px;
   border-radius: 20px;
+  padding: 30px;
 }
-.exercises_main_block_wave {
-  position: absolute;
-  right: 30px;
-  top: 30px;
-  max-width: 60px;
+.walk_main_left h2 {
+  font-family: GilroyExtraBold;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: left;
 }
-.exercises_main_block_text p {
-  font-family: GilroyExtraBold, sans-serif;
+.walk_main_left p {
+  font-family: GilroyExtraBold;
   font-size: 14px;
   font-weight: 800;
   line-height: 21px;
   text-align: left;
-  color: rgb(12, 12, 12);
   margin-top: 15px;
 }
-.exercises_main_block_img {
-  position: relative;
-  margin-top: 26px;
+.walk_main_right {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgb(28, 126, 123);
+  border-radius: 20px;
+  padding: 30px 30px 0px 30px;
+  margin-top: 20px;
 }
-.exercises_main_block_img_pic {
-  max-width: 100%;
-  position: relative;
-  z-index: 2;
+.walk_main_right_top span {
+  font-family: GilroyRegular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
 }
-.exercises_main_block_img_back {
+.walk_main_right_top h2 {
+  font-family: GilroyExtraBold;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: left;
+  color: #fff;
+  margin-top: 3px;
+}
+.walk_main_right p {
+  font-family: Gilroy;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: left;
+  color: #fff;
+  margin-top: 15px;
+}
+.walk_main_right_img {
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  margin-top: 32px;
+  position: relative;
+}
+.walk_main_right_img_pic {
   position: absolute;
-  left: -30px;
-  width: calc(100% + 60px);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   bottom: 0px;
 }
-.exercises_main_block_img_back img {
-  width: 100%;
+.walk_main_right_img_pic.desk {
+  display: none;
 }
-@media (min-width: 576px) {
-  .exercises_main_block_img {
-    margin: 0 auto;
-    margin-top: 26px;
-    width: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .exercises_main_block_img_back {
-    left: 0px;
-    width: 100%;
-  }
+.walk_main_right_img_pic.mob {
+  display: block;
+}
+.walk_main_right_img_back img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (min-width: 768px) {
-  .exercises_main_block {
-    height: 574px;
-    position: relative;
+  .walk_main_left h2 {
+    font-size: 40px;
+    line-height: 60px;
   }
-  .exercises_main_block_text {
+  .walk_main_left p {
+    font-family: GilroyBold;
+    font-size: 26px;
+    line-height: 40px;
+    margin-top: 20px;
+    text-transform: uppercase;
+  }
+  .walk_main_right {
+    padding: 30px;
+    position: relative;
+    margin-top: 40px;
+  }
+  .walk_main_right_top span {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .walk_main_right_top h2 {
+    font-size: 26px;
+    line-height: 39px;
+  }
+  .walk_main_right p {
+    margin-top: 100px;
+    max-width: 292px;
+  }
+  .walk_main_right_img {
+    position: absolute;
+    right: 0px;
+    margin-top: 0px;
+    top: 0px;
+    max-width: 360px;
+    height: 100%;
+  }
+  .walk_main_right_img_pic {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    left: auto;
+    right: 0px;
+    z-index: 2;
+  }
+  .walk_main_right_img_pic.desk {
+    display: block;
+  }
+  .walk_main_right_img_pic.mob {
+    display: none;
+  }
+  .walk_main_right_img_back {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  .walk_main_right_img_back img {
+    width: 432px;
+    max-width: 432px;
+  }
+}
+@media (min-width: 1200px) {
+  .walk_main_left {
     height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112,556 +192,128 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .exercises_main_block_text p {
-    font-size: 18px;
-    line-height: 27px;
-  }
-  .exercises_main_block_img {
-    margin: 0px;
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 400px;
-  }
-  .exercises_main_block_img_back {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    bottom: auto;
+  .walk_main_right {
+    margin-top: 0px;
   }
 }
-@media (min-width: 992px) {
-  .exercises_main_block {
-    height: 350px;
-  }
-  .exercises_main_block_text p {
-    font-family: GilroyBold, sans-serif;
-    font-size: 26px;
-    line-height: 40px;
-    text-transform: uppercase;
-  }
-  .exercises_main_block_img {
-    right: 70px;
-  }
-  .exercises_main_block_img_pic {
-    width: 282px;
-  }
-  .exercises_main_block_img_back {
-    height: 347px;
-    overflow: hidden;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    top: 24px;
-  }
-  .exercises_main_block_wave {
-    max-width: auto;
-  }
+.walk_equilibrium {
+  margin-top: 50px;
 }
-@media (min-width: 1200px) {
-  .exercises_main_block_img {
-    right: 130px;
-  }
-}
-.exercises_green {
-  margin-top: 30px;
-}
-.exercises_green_block {
+.walk_equilibrium_block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  background: rgb(28, 126, 123);
-  border-radius: 20px;
-  padding: 30px;
-}
-.exercises_green_block p {
-  font-family: GilroyRegular, sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
-  text-align: left;
-  color: #fff;
-}
-.exercises_green_block p b {
-  font-family: GilroyBold, sans-serif;
-}
-@media (min-width: 768px) {
-  .exercises_green_block {
-    padding: 40px;
-  }
-  .exercises_green_block p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-@media (min-width: 1200px) {
-  .exercises_green {
-    margin-top: 40px;
-  }
-}
-.exercises_efficiency {
-  margin-top: 30px;
-}
-.exercises_efficiency_block {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background: rgb(239, 239, 239);
   border-radius: 20px;
-  padding: 30px;
-}
-.exercises_efficiency_block h3 {
-  font-family: GilroyBold, sans-serif;
-  position: relative;
-  margin-top: 50px;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28.8px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: rgb(12, 12, 12);
-  text-transform: uppercase;
-}
-.exercises_efficiency_block h3::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: -25px;
-  background: rgb(147, 147, 147);
-  width: 100%;
-  height: 1px;
-}
-.exercises_efficiency_block_wrap_item {
-  border: 1px solid rgb(28, 126, 123);
-  border-radius: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 20px;
-  margin-top: 15px;
 }
-.exercises_efficiency_block_wrap_item_icon {
-  width: 45px;
-  height: 45px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #fff;
-}
-.exercises_efficiency_block_wrap_item p {
-  font-family: GilroyBold, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 25.6px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: rgb(12, 12, 12);
-  margin-top: 15px;
-}
-.exercises_efficiency_block_list_item {
-  border: 1px solid rgb(28, 126, 123);
-  border-radius: 20px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px;
-  margin-top: 15px;
-}
-.exercises_efficiency_block_list_item_icon {
-  width: 45px;
-  height: 45px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #fff;
-}
-.exercises_efficiency_block_list_item_icon span {
-  font-family: GilroyBold, sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28.8px;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: rgb(28, 126, 123);
-}
-.exercises_efficiency_block_list_item p {
-  font-family: GilroyBold, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 25.6px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: rgb(12, 12, 12);
-  margin-top: 15px;
-}
-@media (min-width: 768px) {
-  .exercises_efficiency_block h3 {
-    margin-top: 60px;
-    font-size: 26px;
-    line-height: 42px;
-  }
-  .exercises_efficiency_block h3::after {
-    top: -30px;
-    width: 520px;
-  }
-  .exercises_efficiency_block_wrap_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  .exercises_efficiency_block_wrap_item:first-child {
-    margin-top: 30px;
-  }
-  .exercises_efficiency_block_wrap_item_icon {
-    min-width: 45px;
-  }
-  .exercises_efficiency_block_wrap_item p {
-    margin-left: 15px;
-    margin-top: 0px;
-    font-size: 18px;
-  }
-  .exercises_efficiency_block_list {
-    margin-top: 60px;
-    position: relative;
-  }
-  .exercises_efficiency_block_list::after {
-    content: "";
-    top: -30px;
-    width: 100%;
-    height: 1px;
-    background: rgb(147, 147, 147);
-    position: absolute;
-    left: 0px;
-  }
-  .exercises_efficiency_block_list_item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  .exercises_efficiency_block_list_item_icon {
-    min-width: 45px;
-  }
-  .exercises_efficiency_block_list_item p {
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 0px;
-  }
-}
-@media (min-width: 1200px) {
-  .exercises_efficiency {
-    margin-top: 40px;
-  }
-}
-.exercises_pain {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  margin-top: 90px;
-}
-.exercises_pain_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.exercises_pain_title h2 {
-  text-align: center;
-}
-.exercises_pain_title img {
-  display: none;
-}
-.exercises_pain_top {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  background: rgb(28, 126, 123);
-  padding: 20px;
-  border-radius: 20px 20px 0px 0px;
+.walk_equilibrium_block_wrap_item {
   margin-top: 40px;
 }
-.exercises_pain_top h3 {
-  font-family: GilroyBold, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  color: #fff;
-}
-.exercises_pain_top p {
-  font-family: GilroyRegular, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: #fff;
-  margin-top: 20px;
-}
-.exercises_pain_top ul {
-  margin-top: 20px;
-}
-.exercises_pain_top ul li {
-  font-family: GilroyRegular, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  color: #fff;
-  letter-spacing: 0.02em;
-  text-align: left;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  padding-left: 20px;
-  margin-top: 15px;
-}
-.exercises_pain_top ul li::after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 4px;
-  width: 10px;
-  height: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-  background-color: #fff;
-}
-.exercises_pain_top_desk {
-  display: none;
-}
-.exercises_pain_top_mob {
-  display: block;
-  width: 100%;
-  margin-top: 30px;
-  max-width: 450px;
-}
-.exercises_pain_main {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  border: 3px solid rgb(28, 126, 123);
-  border-radius: 20px;
-  padding: 20px;
-  z-index: 2;
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  background-color: #fff;
-}
-.exercises_pain_main_info {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.exercises_pain_main_info h2 br {
-  display: none;
-}
-.exercises_pain_main_info p {
-  font-family: GilroyRegular, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.exercises_pain_main_step {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: rgb(28, 126, 123);
-  position: relative;
-  padding: 15px;
-  border-radius: 20px;
-  margin-top: 15px;
-}
-.exercises_pain_main_step_item {
-  margin-top: 30px;
-}
-.exercises_pain_main_step_item:first-child {
-  margin-top: 0px;
-}
-.exercises_pain_main_step_item_text {
+.walk_equilibrium_block_wrap_item_text_head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.exercises_pain_main_step_item_text span {
-  min-width: 20px;
-  font-family: GilroyBold, sans-serif;
-  font-size: 30px;
+.walk_equilibrium_block_wrap_item_text_head span {
+  font-family: GilroyBold;
+  font-size: 60px;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 50px;
   text-align: left;
   color: rgb(255, 140, 39);
+  min-width: 35px;
+  text-align: center;
 }
-.exercises_pain_main_step_item_text_desc {
-  margin-left: 5px;
-}
-.exercises_pain_main_step_item_text_desc h3 {
-  font-family: GilroyMedium, sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 25.6px;
+.walk_equilibrium_block_wrap_item_text_head h3 {
+  font-family: GilroyBold;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28.8px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: #fff;
+  margin-left: 10px;
 }
-.exercises_pain_main_step_item_text_desc p {
-  font-family: GilroyMedium, sans-serif;
+.walk_equilibrium_block_wrap_item_text p {
+  font-family: GilroyMedium;
   font-size: 14px;
   font-weight: 500;
-  line-height: 22.4px;
+  line-height: 22px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: #fff;
+  margin-top: 12px;
 }
-.exercises_pain_main_step_item_video {
+.walk_equilibrium_block_wrap_item_img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgb(255, 255, 255);
   position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  margin-top: 20px;
-}
-.exercises_pain_main_step_item_video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  padding: 16px 26px;
   border-radius: 20px;
+  margin-top: 25px;
+  height: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-.exercises_pain_main_text {
-  font-family: GilroyExtraBold, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 22.4px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: rgb(12, 12, 12);
-  margin-top: 20px;
+.walk_equilibrium_block_wrap_item_img img {
+  height: 100%;
 }
 @media (min-width: 768px) {
-  .exercises_pain {
-    margin-top: 60px;
-  }
-  .exercises_pain_top {
+  .walk_equilibrium_block {
     padding: 40px;
   }
-  .exercises_pain_top h3 {
+  .walk_equilibrium_block_wrap_item {
+    margin-top: 50px;
+  }
+  .walk_equilibrium_block_wrap_item_text {
+    position: relative;
+    padding-left: 50px;
+  }
+  .walk_equilibrium_block_wrap_item_text_head span {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  .walk_equilibrium_block_wrap_item_text_head h3 {
+    margin-left: 0px;
+  }
+  .walk_equilibrium_block_wrap_item_text p {
     font-size: 16px;
     line-height: 25px;
+    margin-top: 5px;
   }
-  .exercises_pain_top p {
-    font-size: 16px;
-    line-height: 25px;
-    margin-top: 30px;
-  }
-  .exercises_pain_top ul {
-    margin-top: 30px;
-  }
-  .exercises_pain_top ul li {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .exercises_pain_top ul li::after {
-    top: 5px;
-  }
-  .exercises_pain_top_mob {
-    width: 500px;
-  }
-  .exercises_pain_main {
-    padding: 40px 20px;
-  }
-  .exercises_pain_main_info {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    padding: 0px 20px;
-  }
-  .exercises_pain_main_info p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .exercises_pain_main_step {
-    margin-top: 30px;
-    padding: 40px;
-  }
-  .exercises_pain_main_step_item_text span {
-    font-size: 60px;
-    line-height: 60px;
-    min-width: 36px;
-  }
-  .exercises_pain_main_step_item_text_desc {
-    margin-left: 16px;
-  }
-  .exercises_pain_main_step_item_text_desc h3 {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .exercises_pain_main_step_item_text_desc p {
-    font-size: 16px;
-    line-height: 24px;
+  .walk_equilibrium_block_wrap_item_img {
+    margin-top: 40px;
+    height: 330px;
   }
 }
 @media (min-width: 992px) {
-  .exercises_pain {
+  .walk_equilibrium_block_wrap_item_img {
+    height: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .walk_equilibrium {
     margin-top: 90px;
   }
-  .exercises_pain_top {
-    margin-top: 30px;
-    position: relative;
-    padding: 40px 40px 50px 40px;
+  .walk_equilibrium_block {
+    padding: 20px;
   }
-  .exercises_pain_top p {
-    max-width: 570px;
-  }
-  .exercises_pain_top_mob {
-    display: none;
-  }
-  .exercises_pain_top_desk {
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .exercises_pain_main_step {
+  .walk_equilibrium_block_wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -672,898 +324,116 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .exercises_pain_main_step_item {
-    width: calc(33.3333333333% - 20px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-top: 0px;
-  }
-  .exercises_pain_main_step_item_text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .exercises_pain_main_step_item_text_desc h3 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .exercises_pain_main_step_item_video {
-    margin-top: 17px;
-  }
-}
-@media (min-width: 1200px) {
-  .exercises_pain {
-    margin-top: 120px;
-  }
-  .exercises_pain.exercises_pain_second {
-    margin-top: 90px;
-  }
-  .exercises_pain_title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .exercises_pain_title img {
-    display: block;
-    margin-top: 12px;
-  }
-  .exercises_pain_top {
-    margin-top: 30px;
-  }
-  .exercises_pain_top h3 {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .exercises_pain_top p {
-    font-size: 18px;
-    line-height: 28px;
-    max-width: 780px;
-  }
-  .exercises_pain_top ul li {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  .exercises_pain_top ul li::after {
-    top: 7px;
-  }
-  .exercises_pain_main_info h2 br {
-    display: block;
-  }
-  .exercises_pain_main_info p {
-    font-size: 18px;
-    line-height: 28px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-  .exercises_pain_main_step_item_text_desc h3 {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .exercises_pain_main_step_item_text p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .exercises_pain_main_step_item_video {
-    margin-top: 20px;
-  }
-}
-.exercises_simulators {
-  margin-top: 50px;
-}
-.exercises_simulators_block {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: rgb(239, 239, 239);
-  border-radius: 20px;
-  padding: 20px;
-  margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.exercises_simulators_block_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 50px;
-}
-.exercises_simulators_block_text h3 {
-  font-family: GilroyExtraBold, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgb(12, 12, 12);
-}
-.exercises_simulators_block_text a {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 220px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: rgb(234, 148, 87);
-  font-family: GilroyBold, sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #fff;
-  margin-top: 20px;
-  border-radius: 15px;
-}
-@media (min-width: 768px) {
-  .exercises_simulators {
-    margin-top: 60px;
-  }
-  .exercises_simulators_block {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .exercises_simulators_block img {
-    max-width: 170px;
-  }
-  .exercises_simulators_block_text {
-    margin-top: 0px;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .exercises_simulators_block_text h3 {
-    text-align: left;
-    font-size: 18px;
-    line-height: 27px;
-  }
-  .exercises_simulators_block_text a {
-    font-size: 18px;
-    line-height: 52px;
-    height: 52px;
-    padding: 0px 38px;
-    width: auto;
-  }
-}
-@media (min-width: 992px) {
-  .exercises_simulators_block {
-    margin-bottom: 40px;
-    margin-top: 30px;
-  }
-  .exercises_simulators_block img {
-    max-width: 300px;
-  }
-  .exercises_simulators_block_text h3 {
-    font-size: 24px;
-    line-height: 36px;
-  }
-  .exercises_simulators_block_text a {
-    height: 60px;
-    line-height: 60px;
-    font-size: 26px;
-  }
-}
-@media (min-width: 1200px) {
-  .exercises_simulators_block {
-    padding: 40px 60px;
-  }
-  .exercises_simulators_block_text a {
-    width: 220px;
-  }
-}
-@media (min-width: 1400px) {
-  .exercises_simulators_block {
-    padding: 40px 100px;
-  }
-}
-.exercises_water {
-  margin-top: 30px;
-}
-.exercises_water_block {
-  position: relative;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 20px;
-  padding: 20px 20px 180px 20px;
-  background: rgb(239, 239, 239);
-}
-.exercises_water_block_text p {
-  font-family: Gilroy;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 22.4px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: rgb(12, 12, 12);
-  margin-top: 10px;
-}
-.exercises_water_block_img {
-  position: absolute;
-  right: -50px;
-  bottom: -120px;
-}
-.exercises_water_block_img_main {
-  width: 273px;
-  height: 273px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.exercises_water_block_img_wave {
-  position: absolute;
-  right: 84px;
-  top: 60px;
-  max-width: 60px;
-}
-@media (min-width: 768px) {
-  .exercises_water {
-    margin-top: 60px;
-  }
-  .exercises_water_block {
-    padding: 20px;
-  }
-  .exercises_water_block_text {
-    max-width: 420px;
-  }
-  .exercises_water_block_text p {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .exercises_water_block_text p br {
-    display: none;
-  }
-  .exercises_water_block_img {
-    top: 30px;
-    bottom: auto;
-    right: -120px;
-  }
-  .exercises_water_block_img_main {
-    width: 362px;
-    height: 362px;
-  }
-  .exercises_water_block_img_wave {
-    right: 140px;
-    top: 130px;
-  }
-}
-@media (min-width: 992px) {
-  .exercises_water_block {
-    padding: 40px;
-  }
-  .exercises_water_block_text {
-    max-width: 600px;
-  }
-  .exercises_water_block_img {
-    top: -100px;
-    right: -60px;
-  }
-  .exercises_water_block_img_wave {
-    right: 96px;
-    top: 126px;
-  }
-}
-@media (min-width: 1200px) {
-  .exercises_water {
-    margin-top: 90px;
-  }
-  .exercises_water_block_text {
-    max-width: 70%;
-  }
-  .exercises_water_block_text p br {
-    display: block;
-  }
-}
-@media (min-width: 1400px) {
-  .exercises_water_block_text {
-    max-width: 80%;
-  }
-}
-.exercises_platform {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  margin-top: 50px;
-}
-.exercises_platform_item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  background: rgb(239, 239, 239);
-  padding: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 20px;
-  margin-top: 20px;
-}
-.exercises_platform_item_img img {
-  max-width: 100%;
-}
-.exercises_platform_item h2 {
-  text-align: center;
-  margin-top: 30px;
-}
-.exercises_platform_item h3 {
-  font-family: GilroyExtraBold, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 36px;
-  text-align: center;
-  color: rgb(12, 12, 12);
-  text-transform: uppercase;
-}
-.exercises_platform_item a {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 220px;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  background: rgb(234, 148, 87);
-  font-family: GilroyBold, sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #fff;
-  margin-top: 20px;
-  border-radius: 15px;
-}
-.exercises_platform_brand {
-  margin-top: 20px;
-}
-.exercises_platform_link {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  border: 2px solid rgb(28, 126, 123);
-  display: block;
-  overflow: hidden;
-  border-radius: 20px;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_platform_link img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.exercises_platform_link_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 20px 15px 15px 15px;
-}
-.exercises_platform_link_text p {
-  font-family: GilroyExtraBold, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 21px;
-  text-align: left;
-  color: rgb(28, 126, 123);
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_platform_link_text svg path {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_platform_link:hover {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-  background: rgb(28, 126, 123);
-}
-.exercises_platform_link:hover .exercises_platform_link_text p {
-  color: #fff;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_platform_link:hover .exercises_platform_link_text svg path {
-  fill: #fff;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-@media (min-width: 768px) {
-  .exercises_platform {
-    margin-top: 60px;
-  }
-  .exercises_platform h2 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-  .exercises_platform h2 br {
-    display: none;
-  }
-  .exercises_platform_item_img {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 150px;
-  }
-  .exercises_platform_item_img img {
-    width: 294px;
-  }
-  .exercises_platform_item h2 {
-    font-size: 24px;
-    line-height: 36px;
-    text-align: left;
-  }
-  .exercises_platform_item h3 {
-    margin-top: 30px;
-  }
-  .exercises_platform_link_text {
-    padding: 30px;
-  }
-  .exercises_platform_link_text p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-@media (min-width: 992px) {
-  .exercises_platform {
-    margin-top: 50px;
-  }
-  .exercises_platform h2 {
-    text-align: left;
-  }
-  .exercises_platform h2 br {
-    display: block;
-  }
-  .exercises_platform .row {
-    margin-top: 30px;
-  }
-  .exercises_platform_item {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-top: 0px;
-  }
-  .exercises_platform_item h3 {
-    text-align: left;
-    font-size: 36px;
-    line-height: 54px;
-    margin-top: 20px;
-  }
-  .exercises_platform_brand {
-    margin-top: 0px;
-  }
-}
-@media (min-width: 1200px) {
-  .exercises_platform {
-    margin-top: 90px;
-  }
-  .exercises_platform .row {
     margin-top: 40px;
   }
-  .exercises_platform_item {
-    padding: 40px;
-  }
-  .exercises_platform_item_img {
-    height: 160px;
-  }
-  .exercises_platform_item_img img {
-    width: auto;
-  }
-  .exercises_platform_item h3 {
-    font-size: 40px;
-    line-height: 60px;
-    margin-top: 20px;
-  }
-  .exercises_platform_link_text p {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .exercises_platform_list {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .exercises_platform_list_item {
-    width: calc(16.6666666667% - 25px);
-  }
-}
-.exercises_accordion {
-  margin-top: 70px;
-}
-.exercises_accordion_title h2 {
-  font-family: GilroyExtraBold, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 36px;
-  text-align: center;
-  color: rgb(12, 12, 12);
-}
-.exercises_accordion_list_item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  border: 2px solid rgb(28, 126, 123);
-  border-radius: 20px;
-  margin-top: 20px;
-  padding: 15px;
-}
-.exercises_accordion_list_item_head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  cursor: pointer;
-}
-.exercises_accordion_list_item_head h5 {
-  font-family: GilroyExtraBold, sans-serif;
-  font-size: 14px;
-  font-weight: 800;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: rgb(12, 12, 12);
-  text-transform: uppercase;
-}
-.exercises_accordion_list_item_head button {
-  min-width: 30px;
-  width: 30px;
-  height: 30px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-  background: rgb(28, 126, 123);
-  margin-left: 10px;
-  position: relative;
-  padding: 6px;
-}
-.exercises_accordion_list_item_head button::after {
-  top: 50%;
-  left: 6px;
-  width: 60%;
-  height: 4px;
-  margin-top: -2px;
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  -webkit-transition: -webkit-transform 0.25s ease-out;
-  transition: -webkit-transform 0.25s ease-out;
-  transition: transform 0.25s ease-out;
-  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
-}
-.exercises_accordion_list_item_head button::before {
-  top: 6px;
-  left: 50%;
-  width: 4px;
-  height: 60%;
-  margin-left: -2px;
-  content: "";
-  position: absolute;
-  background-color: #fff;
-  -webkit-transition: -webkit-transform 0.25s ease-out;
-  transition: -webkit-transform 0.25s ease-out;
-  transition: transform 0.25s ease-out;
-  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
-}
-.exercises_accordion_list_item_head.active button::after {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-.exercises_accordion_list_item_head.active button::before {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-.exercises_accordion_list_item_body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding-top: 34px;
-  display: none;
-}
-.exercises_accordion_list_item_body p {
-  font-family: GilroyRegular, sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-bottom: 0px;
-}
-.exercises_accordion_list_item_body p b {
-  font-family: GilroyExtraBold, sans-serif;
-  font-weight: 800;
-}
-.exercises_accordion_list_item_body table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 20px;
-}
-.exercises_accordion_list_item_body table td {
-  border: 1px solid black;
-  font-size: 12px;
-  line-height: 15px;
-  text-align: center;
-  padding: 5px;
-}
-.exercises_accordion_list_item_body table th {
-  font-size: 12px;
-  line-height: 15px;
-  border: 1px solid black;
-  padding: 5px;
-}
-@media (min-width: 576px) {
-  .exercises_accordion_list_item_head {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-}
-@media (min-width: 768px) {
-  .exercises_accordion {
-    margin-top: 60px;
-  }
-  .exercises_accordion_title {
-    margin-bottom: 40px;
-  }
-  .exercises_accordion_title h2 {
-    font-size: 40px;
-    line-height: 60px;
-  }
-  .exercises_accordion_list_item {
-    padding: 30px;
-  }
-  .exercises_accordion_list_item_head {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .exercises_accordion_list_item_head h5 {
-    font-size: 18px;
-    line-height: 28px;
-  }
-  .exercises_accordion_list_item_body p {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .exercises_accordion_list_item_body table {
-    border-collapse: collapse;
-    width: 100%;
-    margin-top: 20px;
-  }
-  .exercises_accordion_list_item_body table td {
-    border: 1px solid black;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    padding: 5px;
-  }
-  .exercises_accordion_list_item_body table th {
-    font-size: 16px;
-    line-height: 20px;
-    border: 1px solid black;
-    padding: 5px;
-  }
-}
-@media (min-width: 992px) {
-  .exercises_accordion_list_item_head h5 {
-    font-size: 20px;
-    line-height: 28px;
-  }
-  .exercises_accordion_list_item_body table th {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 10px;
-  }
-  .exercises_accordion_list_item_body table td {
-    font-size: 18px;
-    line-height: 22px;
-    padding: 10px;
-  }
-}
-@media (min-width: 1200px) {
-  .exercises_accordion_list_item_head h5 {
-    font-size: 22px;
-    line-height: 32px;
-  }
-  .exercises_accordion_list_item_body p {
-    font-size: 18px;
-    line-height: 26px;
-  }
-}
-.exercises_cats {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 70px;
-}
-.exercises_cats .col-12 {
-  margin-top: 20px;
-}
-.exercises_cats_item {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: relative;
-  background: rgb(28, 126, 123);
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.exercises_cats_item_text {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 24px 30px;
-}
-.exercises_cats_item_text p {
-  font-family: GilroyExtraBold, sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 24px;
-  text-align: left;
-  color: #fff;
-}
-.exercises_cats_item_img {
-  position: relative;
-}
-.exercises_cats_item_img img {
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.exercises_cats_item_img_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  left: 0px;
-  bottom: 20px;
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0px 20px 0px 30px;
-}
-.exercises_cats_item_img_text span {
-  font-family: GilroyBold, sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #fff;
-  text-decoration: underline;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_cats_item_img_text_arrow {
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 50%;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_cats_item_img_text_arrow svg path {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_cats_item:hover .exercises_cats_item_text span {
-  text-decoration: none;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_cats_item:hover .exercises_cats_item_img_text_arrow {
-  background-color: rgb(28, 126, 123);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.exercises_cats_item:hover .exercises_cats_item_img_text_arrow svg path {
-  stroke: #fff;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-@media (min-width: 992px) {
-  .exercises_cats {
-    margin-top: 90px;
-  }
-  .exercises_cats .col-12 {
+  .walk_equilibrium_block_wrap_item {
+    width: calc(50% - 20px);
     margin-top: 0px;
   }
-  .exercises_cats_item_text {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+  .walk_equilibrium_block_wrap_item_img {
+    height: 270px;
+    margin-top: 40px;
+  }
+}
+.walk_change {
+  margin-top: 40px;
+}
+.walk_change_block {
+  background: rgb(239, 239, 239);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.walk_change_block_desk {
+  display: none;
+}
+.walk_change_block_mob {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: translate(20px, 20px);
+          transform: translate(20px, 20px);
+}
+.walk_change_block p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 20px;
+}
+.walk_change_block p br {
+  display: none;
+}
+.walk_change_block p.qoute {
+  font-style: italic;
+}
+.walk_change_block p.qoute br {
+  display: block;
+}
+@media (min-width: 768px) {
+  .walk_change_block {
+    padding: 30px 30px 300px 30px;
+  }
+  .walk_change_block p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 30px;
+  }
+  .walk_change_block p.qoute {
+    max-width: 324px;
+  }
+  .walk_change_block_mob {
+    position: absolute;
+    right: 0px;
+    top: auto;
+    bottom: 0px;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
+  }
+}
+@media (min-width: 992px) {
+  .walk_change_block {
+    padding: 40px;
+  }
+  .walk_change_block p {
+    max-width: 600px;
+    margin-top: 20px;
+  }
+  .walk_change_block p.qoute {
+    max-width: 100%;
+  }
+  .walk_change_block_mob {
+    display: none;
+  }
+  .walk_change_block_desk {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
 }
 @media (min-width: 1200px) {
-  .exercises_cats {
-    margin-top: 60px;
+  .walk_change {
+    margin-top: 90px;
   }
-  .exercises_cats_item_text {
-    padding: 30px;
-  }
-  .exercises_cats_item_text p {
-    font-size: 18px;
-    line-height: 26px;
+  .walk_change_block p {
+    max-width: 754px;
   }
 }
-.exercises_order {
-  margin-top: 35px;
+@media (min-width: 1360px) {
+  .walk_change_block p {
+    max-width: 902px;
+  }
 }
-.exercises_order_block {
+.walk_order {
+  margin-top: 40px;
+}
+.walk_order_block {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
@@ -1571,13 +441,13 @@
   border-radius: 20px;
   overflow: hidden;
 }
-.exercises_order_block_top {
+.walk_order_block_top {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 20px 20px 30px 20px;
   position: relative;
 }
-.exercises_order_block_top h2 {
+.walk_order_block_top h2 {
   font-family: GilroyExtraBold, sans-serif;
   font-size: 16px;
   font-weight: 800;
@@ -1587,13 +457,13 @@
   position: relative;
   z-index: 2;
 }
-.exercises_order_block_top_feature {
+.walk_order_block_top_feature {
   position: absolute;
   right: 0px;
   top: -10px;
   z-index: 1;
 }
-.exercises_order_block_top_feature span {
+.walk_order_block_top_feature span {
   position: absolute;
   right: 20px;
   bottom: 6px;
@@ -1604,15 +474,15 @@
   text-align: left;
   color: rgb(255, 140, 39);
 }
-.exercises_order_block_top_feature_mob {
+.walk_order_block_top_feature_mob {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.exercises_order_block_top_feature_desk {
+.walk_order_block_top_feature_desk {
   display: none;
 }
-.exercises_order_block_main {
+.walk_order_block_main {
   background: rgb(28, 126, 123);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1631,7 +501,7 @@
           align-items: flex-start;
   z-index: 2;
 }
-.exercises_order_block_main_text {
+.walk_order_block_main_text {
   width: 100%;
   font-family: GilroyMedium, sans-serif;
   font-size: 14px;
@@ -1643,19 +513,19 @@
   z-index: 2;
   position: relative;
 }
-.exercises_order_block_main_text a {
+.walk_order_block_main_text a {
   font-weight: 800;
 }
-.exercises_order_block_main_text br {
+.walk_order_block_main_text br {
   display: none;
 }
-.exercises_order_block_main form {
+.walk_order_block_main form {
   margin-top: 30px;
   width: 100%;
   z-index: 2;
   position: relative;
 }
-.exercises_order_block_main form input {
+.walk_order_block_main form input {
   width: 100%;
   background-color: #fff;
   height: 60px;
@@ -1669,7 +539,7 @@
   box-sizing: border-box;
   padding: 0px 10px;
 }
-.exercises_order_block_main form button {
+.walk_order_block_main form button {
   width: 100%;
   height: 60px;
   -webkit-box-sizing: border-box;
@@ -1688,13 +558,13 @@
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.exercises_order_block_main form button:hover {
+.walk_order_block_main form button:hover {
   background-color: #fff;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: rgb(28, 126, 123);
 }
-.exercises_order_block_main_call {
+.walk_order_block_main_call {
   margin-top: 196px;
   width: 100%;
   background: rgb(239, 239, 239);
@@ -1716,7 +586,7 @@
   z-index: 2;
   position: relative;
 }
-.exercises_order_block_main_call h4 {
+.walk_order_block_main_call h4 {
   font-family: GilroyExtraBold, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1725,7 +595,7 @@
   color: rgb(28, 126, 123);
   text-transform: uppercase;
 }
-.exercises_order_block_main_call a {
+.walk_order_block_main_call a {
   font-family: GilroyRegular, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -1735,75 +605,75 @@
   text-decoration: underline;
   margin-top: 12px;
 }
-.exercises_order_block_main_call a:hover {
+.walk_order_block_main_call a:hover {
   text-decoration: none;
 }
-.exercises_order_block_main_mob {
+.walk_order_block_main_mob {
   position: absolute;
   right: 0px;
   bottom: 30px;
   z-index: 1;
 }
-.exercises_order_block_main_desk {
+.walk_order_block_main_desk {
   display: none;
 }
 @media (min-width: 768px) {
-  .exercises_order {
+  .walk_order {
     margin-top: 90px;
   }
-  .exercises_order_block_top {
+  .walk_order_block_top {
     padding: 40px 40px 40px 40px;
   }
-  .exercises_order_block_top h2 {
+  .walk_order_block_top h2 {
     font-size: 24px;
     line-height: 36px;
     width: 368px;
   }
-  .exercises_order_block_top_feature span {
+  .walk_order_block_top_feature span {
     font-size: 100px;
     line-height: 150px;
     bottom: auto;
     top: 26px;
     right: 44px;
   }
-  .exercises_order_block_top_feature_mob {
+  .walk_order_block_top_feature_mob {
     display: none;
   }
-  .exercises_order_block_top_feature_desk {
+  .walk_order_block_top_feature_desk {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .exercises_order_block_main {
+  .walk_order_block_main {
     padding: 40px 40px 0px 40px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  .exercises_order_block_main_text {
+  .walk_order_block_main_text {
     font-size: 16px;
     line-height: 24px;
     max-width: 608px;
   }
-  .exercises_order_block_main form {
+  .walk_order_block_main form {
     width: 440px;
   }
-  .exercises_order_block_main form input {
+  .walk_order_block_main form input {
     padding: 0px 26px;
   }
-  .exercises_order_block_main form button {
+  .walk_order_block_main form button {
     font-size: 16px;
   }
-  .exercises_order_block_main_mob {
+  .walk_order_block_main_mob {
     display: none;
   }
-  .exercises_order_block_main_desk {
+  .walk_order_block_main_desk {
     display: block;
     margin-left: auto;
     -webkit-transform: translateX(40px);
             transform: translateX(40px);
   }
-  .exercises_order_block_main_call {
+  .walk_order_block_main_call {
     position: absolute;
     bottom: 60px;
     left: 60px;
@@ -1812,72 +682,210 @@
   }
 }
 @media (min-width: 992px) {
-  .exercises_order_block_top {
+  .walk_order_block_top {
     padding: 40px;
   }
-  .exercises_order_block_top h2 {
+  .walk_order_block_top h2 {
     font-size: 37px;
     line-height: 55px;
     width: 636px;
   }
-  .exercises_order_block_top_feature {
+  .walk_order_block_top_feature {
     bottom: auto;
     top: 0px;
   }
-  .exercises_order_block_main {
+  .walk_order_block_main {
     padding: 40px 40px 60px 40px;
     position: relative;
   }
-  .exercises_order_block_main_text {
+  .walk_order_block_main_text {
     max-width: 670px;
   }
-  .exercises_order_block_main_desk {
+  .walk_order_block_main_desk {
     position: absolute;
     right: 0px;
     bottom: 0px;
     width: 360px;
   }
-  .exercises_order_block_main_call {
+  .walk_order_block_main_call {
     left: auto;
     right: 150px;
     bottom: 36px;
   }
 }
 @media (min-width: 1200px) {
-  .exercises_order {
-    margin-top: 120px;
+  .walk_order {
+    margin-top: 90px;
   }
-  .exercises_order_block_top h2 {
+  .walk_order_block_top h2 {
     font-size: 40px;
     line-height: 60px;
   }
-  .exercises_order_block_main {
+  .walk_order_block_main {
     padding: 40px;
   }
-  .exercises_order_block_main_text {
+  .walk_order_block_main_text {
     font-size: 18px;
     line-height: 28px;
-    max-width: 860px;
+    max-width: 690px;
   }
-  .exercises_order_block_main_text br {
+  .walk_order_block_main_text br {
     display: block;
   }
-  .exercises_order_block_main form {
+  .walk_order_block_main form {
     width: 520px;
   }
-  .exercises_order_block_main_desk {
+  .walk_order_block_main_desk {
     width: 400px;
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-  .exercises_order_block_main_call {
+  .walk_order_block_main_call {
     right: 260px;
   }
 }
-.exercises_map {
-  margin-top: 50px;
+.walk_cats {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 70px;
 }
-.exercises_map_block {
+.walk_cats .col-12 {
+  margin-top: 20px;
+}
+.walk_cats_item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  background: rgb(28, 126, 123);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.walk_cats_item_text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 24px 30px;
+}
+.walk_cats_item_text p {
+  font-family: GilroyExtraBold, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: #fff;
+}
+.walk_cats_item_img {
+  position: relative;
+}
+.walk_cats_item_img img {
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.walk_cats_item_img_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 20px 0px 30px;
+}
+.walk_cats_item_img_text span {
+  font-family: GilroyBold, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: underline;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.walk_cats_item_img_text_arrow {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.walk_cats_item_img_text_arrow svg path {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.walk_cats_item:hover .walk_cats_item_img_text span {
+  text-decoration: none;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.walk_cats_item:hover .walk_cats_item_img_text_arrow {
+  background-color: rgb(28, 126, 123);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.walk_cats_item:hover .walk_cats_item_img_text_arrow svg path {
+  stroke: #fff;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media (min-width: 992px) {
+  .walk_cats {
+    margin-top: 90px;
+  }
+  .walk_cats .col-12 {
+    margin-top: 0px;
+  }
+  .walk_cats_item_text {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .walk_cats {
+    margin-top: 60px;
+  }
+  .walk_cats_item_text {
+    padding: 30px;
+  }
+  .walk_cats_item_text p {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+.walk_pain {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  margin-top: 30px;
+}
+.walk_pain_title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1889,48 +897,518 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.exercises_map_block p {
+.walk_pain_title h2 {
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.walk_pain_title h2 br {
+  display: none;
+}
+.walk_pain_top {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  background: rgb(28, 126, 123);
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  margin-top: 40px;
+}
+.walk_pain_top h2 {
+  color: #fff;
+}
+.walk_pain_top p {
   font-family: GilroyRegular, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #fff;
+  margin-top: 20px;
+}
+.walk_pain_top p.walk_pain_top_im {
+  margin-top: 0px;
+}
+.walk_pain_top_desk {
+  display: none;
+}
+.walk_pain_top_mob {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  max-width: 450px;
+}
+.walk_pain_main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  border: 3px solid rgb(28, 126, 123);
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 2;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  background-color: #fff;
+}
+.walk_pain_main_info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px 10px 0px 10px;
+}
+.walk_pain_main_info h2 br {
+  display: none;
+}
+.walk_pain_main_info ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  font-family: GilroyRegular;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  text-align: center;
-  color: rgb(12, 12, 12);
-  margin-top: 10px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  padding-left: 20px;
+  margin-top: 20px;
 }
-.exercises_map_block a {
-  margin-top: 30px;
+.walk_pain_main_info ul li::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 8px;
+  width: 10px;
+  height: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  background: rgb(12, 12, 12);
 }
-.exercises_map_iframe {
+.walk_pain_main_info_true br {
+  display: none;
+}
+.walk_pain_main_points {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: rgb(28, 126, 123);
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 26px 10px 10px 10px;
+}
+.walk_pain_main_points_hero {
+  width: 215px;
+  margin: 0 auto;
+  position: relative;
+}
+.walk_pain_main_points_hero_img {
+  width: 215px;
+}
+.walk_pain_main_points_hero_item {
+  position: absolute;
+}
+.walk_pain_main_points_hero_item.one {
+  top: 46px;
+  left: 85px;
+}
+.walk_pain_main_points_hero_item.two {
+  top: 78px;
+  left: 68px;
+}
+.walk_pain_main_points_hero_item.three {
+  top: 160px;
+  left: 78px;
+}
+.walk_pain_main_points_hero_item.four {
+  top: 210px;
+  right: 69px;
+}
+.walk_pain_main_points_hero_item.five {
+  bottom: 26px;
+  left: 35px;
+}
+.walk_pain_main_points_hero_item.six {
+  top: 0px;
+  right: 75px;
+}
+.walk_pain_main_points_hero_item.seven {
+  top: 162px;
+  right: 57px;
+}
+.walk_pain_main_points_hero_item.eight {
+  bottom: 42px;
+  right: 12px;
+}
+.walk_pain_main_points_hero_item.nine {
+  bottom: 17px;
+  right: 45px;
+}
+.walk_pain_main_points_hero_item h3 {
+  display: none;
+}
+.walk_pain_main_points_hero_item p {
+  display: none;
+}
+.walk_pain_main_points_hero_item img {
+  display: none;
+}
+.walk_pain_main_points_hero_item button {
+  width: 21px;
+  height: 21px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgb(114, 185, 183);
+  border: 1px solid rgb(255, 255, 255);
+}
+.walk_pain_main_points_hero_item button img {
+  display: block;
+}
+.walk_pain_main_points_hero_item button.active {
+  background: rgb(28, 126, 123);
+}
+.walk_pain_main_points_mob_item {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 14px;
+}
+.walk_pain_main_points_mob_item h3 {
+  font-family: GilroyBold;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.02px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.walk_pain_main_points_mob_item p {
+  font-family: GilroyRegular;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  margin-top: 5px;
+}
+.walk_pain_main_points_mob_item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.walk_pain_main_points_italic {
+  display: none;
+}
+.walk_pain_main_points h2 {
   display: none;
 }
 @media (min-width: 768px) {
-  .exercises_map {
-    margin-top: 60px;
+  .walk_pain {
+    margin-top: 40px;
   }
-  .exercises_map_block p {
-    font-size: 22px;
-    line-height: 32px;
+  .walk_pain_title h2 {
+    font-size: 26px;
+    line-height: 39px;
   }
-  .exercises_map_block a {
-    display: none;
+  .walk_pain_top {
+    padding: 40px;
   }
-  .exercises_map_iframe {
-    display: block;
-    margin-top: 20px;
+  .walk_pain_top p {
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 30px;
+  }
+  .walk_pain_top ul {
+    margin-top: 30px;
+  }
+  .walk_pain_top ul li {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .walk_pain_top ul li::after {
+    top: 5px;
+  }
+  .walk_pain_top_mob {
+    width: 500px;
+  }
+  .walk_pain_main {
+    padding: 40px 20px 20px 20px;
+  }
+  .walk_pain_main_info {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 20px;
+  }
+  .walk_pain_main_info p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .walk_pain_main.other {
+    padding: 30px 20px;
   }
 }
 @media (min-width: 992px) {
-  .exercises_map_block p {
-    margin-top: 20px;
+  .walk_pain {
+    margin-top: 90px;
   }
-  .exercises_map_iframe {
-    margin-top: 40px;
+  .walk_pain_top {
+    margin-top: 30px;
+    position: relative;
+    padding: 40px 40px 50px 40px;
+  }
+  .walk_pain_top p {
+    max-width: 570px;
+  }
+  .walk_pain_top_mob {
+    display: none;
+  }
+  .walk_pain_top_desk {
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
 }
 @media (min-width: 1200px) {
-  .exercises_map {
-    margin-top: 90px;
+  .walk_pain_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .walk_pain_title h2 {
+    margin-bottom: 0px;
+  }
+  .walk_pain_title h2 br {
+    display: block;
+  }
+  .walk_pain_title img {
+    display: block;
+    margin-top: 12px;
+  }
+  .walk_pain_top {
+    margin-top: 30px;
+  }
+  .walk_pain_top h3 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .walk_pain_top p {
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 780px;
+  }
+  .walk_pain_top p.walk_pain_top_im {
+    margin: 30px 0px;
+  }
+  .walk_pain_top ul li {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .walk_pain_top ul li::after {
+    top: 7px;
+  }
+  .walk_pain_main_info h2 br {
+    display: block;
+  }
+  .walk_pain_main_info ul li {
+    font-size: 18px;
+  }
+  .walk_pain_main_info p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .walk_pain_main_info p.walk_pain_main_info_true {
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+  .walk_pain_main_info p.walk_pain_main_info_true br {
+    display: block;
+  }
+  .walk_pain_main_points {
+    padding: 40px;
+    margin-top: 40px;
+  }
+  .walk_pain_main_points h2 {
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+  .walk_pain_main_points_hero {
+    width: 1060px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  .walk_pain_main_points_hero_img {
+    width: 336px;
+  }
+  .walk_pain_main_points_hero_item {
+    display: none;
+  }
+  .walk_pain_main_points_hero_item button {
+    display: none;
+  }
+  .walk_pain_main_points_hero_item h3 {
+    font-family: GilroyBold;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.02px;
+    letter-spacing: 0.02em;
+    color: #fff;
+    display: block;
+  }
+  .walk_pain_main_points_hero_item p {
+    font-family: GilroyRegular;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #fff;
+    margin-top: 5px;
+    display: block;
+  }
+  .walk_pain_main_points_hero_item img {
+    display: block;
+    position: absolute;
+    width: auto;
+  }
+  .walk_pain_main_points_hero_item.one {
+    display: block;
+    width: 396px;
+    top: -35px;
+    left: 0px;
+  }
+  .walk_pain_main_points_hero_item.two {
+    display: block;
+    width: 393px;
+    top: 88px;
+    left: 0px;
+  }
+  .walk_pain_main_points_hero_item.two img {
+    top: 27px;
+  }
+  .walk_pain_main_points_hero_item.three {
+    display: block;
+    width: 377px;
+    top: 189px;
+    left: 0px;
+  }
+  .walk_pain_main_points_hero_item.four {
+    display: block;
+    width: 407px;
+    top: 316px;
+    left: 0px;
+  }
+  .walk_pain_main_points_hero_item.four img {
+    top: 28px;
+  }
+  .walk_pain_main_points_hero_item.five {
+    display: block;
+    width: 362px;
+    bottom: 72px;
+    left: 0px;
+  }
+  .walk_pain_main_points_hero_item.six {
+    display: block;
+    width: 432px;
+    top: -12px;
+    right: 0px;
+  }
+  .walk_pain_main_points_hero_item.six h3 {
+    padding-left: 126px;
+  }
+  .walk_pain_main_points_hero_item.six p {
+    padding-left: 126px;
+  }
+  .walk_pain_main_points_hero_item.six img {
+    top: 26px;
+  }
+  .walk_pain_main_points_hero_item.seven {
+    display: block;
+    width: 424px;
+    top: 100px;
+    right: 0px;
+  }
+  .walk_pain_main_points_hero_item.seven h3 {
+    padding-left: 119px;
+  }
+  .walk_pain_main_points_hero_item.seven p {
+    padding-left: 119px;
+  }
+  .walk_pain_main_points_hero_item.seven img {
+    top: 30px;
+  }
+  .walk_pain_main_points_hero_item.eight {
+    display: block;
+    width: 386px;
+    top: 352px;
+    right: 0px;
+  }
+  .walk_pain_main_points_hero_item.eight h3 {
+    padding-left: 80px;
+  }
+  .walk_pain_main_points_hero_item.eight p {
+    padding-left: 80px;
+  }
+  .walk_pain_main_points_hero_item.eight img {
+    top: 30px;
+    right: 21px;
+  }
+  .walk_pain_main_points_hero_item.nine {
+    display: block;
+    width: 386px;
+    bottom: 16px;
+    right: -19px;
+  }
+  .walk_pain_main_points_hero_item.nine h3 {
+    padding-left: 80px;
+  }
+  .walk_pain_main_points_hero_item.nine p {
+    padding-left: 80px;
+  }
+  .walk_pain_main_points_hero_item.nine img {
+    top: 30px;
+    right: 21px;
+  }
+  .walk_pain_main_points_mob {
+    display: none;
   }
 }
 
