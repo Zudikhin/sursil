@@ -56,6 +56,16 @@ $(document).ready(function() {
         $(this).parent().parent().find(".innovation_correct_wrap_item_hide").slideDown();
     });
 
+    $(".innovation_process_open").click(function() {
+        $(".innovation_process").addClass("active");
+        $(".innovation_process_hide").slideDown();
+    });
+
+    $(".innovation_process_close").click(function() {
+        $(".innovation_process").removeClass("active");
+        $(".innovation_process_hide").slideUp();
+    });
+
     $(".innovation_correct_wrap_item_block_close").click(function() {
         $(this).parent().removeClass("active");
         $(this).parent().parent().find(".innovation_correct_wrap_item_hide").slideUp();

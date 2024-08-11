@@ -2057,10 +2057,13 @@
 }
 .innovation_process_hide {
   margin-top: 30px;
+  display: none;
 }
-.innovation_process_hide img {
-  margin-top: 20px;
-  border-radius: 20px;
+.innovation_process.active .innovation_process_open {
+  display: none;
+}
+.innovation_process.active .innovation_process_close {
+  display: block;
 }
 .innovation_strength {
   padding-top: 80px;
