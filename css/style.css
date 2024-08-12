@@ -2056,7 +2056,7 @@
   text-decoration: none;
 }
 .innovation_process_hide {
-  margin-top: 30px;
+  margin-top: 20px;
   display: none;
 }
 .innovation_process.active .innovation_process_open {
@@ -2742,8 +2742,20 @@
   .innovation_process_desktop_last {
     border-radius: 20px;
   }
-  .innovation_process_desktop .row_last {
-    margin-top: 28px;
+  .innovation_process_desktop_bot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 30px;
+  }
+  .innovation_process_desktop_bot img {
+    width: 130px;
+  }
+  .innovation_process_desktop_bot p {
+    margin-left: 20px;
   }
   .innovation_prevention_hide_row {
     display: -webkit-box;
@@ -3415,10 +3427,6 @@
   }
   .innovation_process_desktop_last {
     max-width: 160px;
-    margin-left: auto;
-  }
-  .innovation_process_last_text {
-    max-width: 364px;
   }
   .innovation_strength h3 {
     margin-top: 0px;
@@ -4155,11 +4163,11 @@
   .innovation_process_desktop_mid img {
     height: auto;
   }
+  .innovation_process_desktop_bot img {
+    width: 100%;
+  }
   .innovation_process_last_text {
     max-width: 410px;
-  }
-  .innovation_process_hide {
-    margin-top: 40px;
   }
   .innovation_strength {
     padding-top: 150px;
