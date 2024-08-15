@@ -1068,7 +1068,7 @@
   display: -ms-flexbox;
   display: flex;
 }
-.innovation_study a {
+.innovation_study_open {
   background: rgb(28, 126, 123);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1084,11 +1084,81 @@
   border-radius: 30px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
-.innovation_study a:hover {
+.innovation_study_open:hover {
   background: #105352;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+.innovation_study_hide {
+  background: rgb(28, 126, 123);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 15px 25px;
+  display: block;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+  text-align: center;
+  color: #fff;
+  margin-top: 24px;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: none;
+}
+.innovation_study_hide:hover {
+  background: #105352;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.innovation_study_sensation {
+  padding-top: 30px;
+  display: none;
+}
+.innovation_study_sensation h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.9);
+}
+.innovation_study_sensation p {
+  margin-bottom: 0px;
+}
+.innovation_study_sensation_row_left img {
+  margin-top: 0px;
+}
+.innovation_study_sensation_row_right p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 16px;
+}
+.innovation_study_sensation_row_right p.black {
+  color: rgba(0, 0, 0, 0.9);
+}
+.innovation_study_sensation_big {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+.innovation_study.active .innovation_study_open {
+  display: none;
+}
+.innovation_study.active .innovation_study_hide {
+  display: block;
 }
 .innovation_steptwo {
   padding-top: 80px;
@@ -1312,6 +1382,9 @@
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   text-transform: uppercase;
+}
+.innovation_steptwo_item_second_link.last_btn {
+  margin-top: 18px;
 }
 .innovation_steptwo_item_second_link:hover {
   background: #105352;
@@ -2861,6 +2934,28 @@
     width: calc(50% - 10px);
     margin-top: 0px;
   }
+  .innovation_study_sensation_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+  }
+  .innovation_study_sensation_row_left {
+    width: calc(50% - 10px);
+    margin-top: 0px;
+  }
+  .innovation_study_sensation_row_right {
+    width: calc(50% - 10px);
+  }
+  .innovation_study_sensation_row_right p:first-child {
+    margin-top: 0px;
+  }
 }
 @media (min-width: 992px) {
   .innovation_main_block {
@@ -3279,11 +3374,21 @@
   .innovation_prevention_mob {
     display: none;
   }
+  .innovation_prevention_mob_sidebar {
+    margin-top: 0px;
+    padding: 20px;
+    margin-left: 20px;
+  }
   .innovation_prevention_desk {
     display: block;
   }
+  .innovation_prevention_desk_img {
+    border-radius: 50%;
+    max-width: 290px;
+  }
   .innovation_prevention_desk_sidebar {
     max-width: 290px;
+    margin-top: 30px;
   }
   .innovation_prevention_desk_sidebar img {
     border-radius: 20px;
@@ -3322,11 +3427,6 @@
   }
   .innovation_prevention_desk_wrap_images img:first-child {
     width: 100%;
-  }
-  .innovation_prevention_desk_wrap_images img:last-child {
-    min-width: 230px;
-    margin-left: 40px;
-    border-radius: 50%;
   }
   .innovation_prevention_hide_sidebar {
     margin-top: 0px;
@@ -3465,6 +3565,18 @@
     margin-top: 0px;
     margin-bottom: 20px;
   }
+  .innovation_gait_down {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
   .innovation_gait_sidebar {
     margin-top: 0px;
     max-width: 290px;
@@ -3478,6 +3590,9 @@
         -ms-flex-align: end;
             align-items: flex-end;
     padding-bottom: 24px;
+  }
+  .innovation_gait p {
+    margin-bottom: 0px;
   }
 }
 @media (min-width: 1200px) {
@@ -3825,6 +3940,27 @@
   .innovation_study a {
     margin-top: 32px;
   }
+  .innovation_study_sensation h2 {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 100%;
+  }
+  .innovation_study_sensation_big {
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .innovation_study_sensation_row_left {
+    width: 510px;
+    min-width: 510px;
+  }
+  .innovation_study_sensation_row_left img {
+    margin-top: 0px;
+  }
+  .innovation_study_sensation_row_right {
+    width: 100%;
+    margin-left: 30px;
+  }
   .innovation_steptwo {
     padding-top: 150px;
   }
@@ -4039,6 +4175,9 @@
   .innovation_prevention_hide_sidebar {
     left: 70px;
     bottom: 152px;
+  }
+  .innovation_prevention_mob_sidebar {
+    padding: 26px;
   }
   .innovation_choice {
     padding-top: 150px;
@@ -5383,41 +5522,6 @@
 .modal_sensation {
   background: #fff;
   padding: 60px 15px;
-}
-.modal_sensation h2 {
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.9);
-}
-.modal_sensation p {
-  margin-bottom: 0px;
-}
-.modal_sensation_row_left {
-  margin-top: 16px;
-}
-.modal_sensation_row_right p {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: left;
-  color: rgba(0, 0, 0, 0.7);
-  margin-top: 16px;
-}
-.modal_sensation_row_right p.black {
-  color: rgba(0, 0, 0, 0.9);
-}
-.modal_sensation_big {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-  color: rgba(0, 0, 0, 0.9);
-  margin-top: 16px;
-  text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .modal_sensation {

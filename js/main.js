@@ -101,6 +101,16 @@ $(document).ready(function() {
         $(".innovation_nutrition_hide").slideUp();
     });
 
+    $(".innovation_study_open").click(function() {
+        $(".innovation_study").addClass("active");
+        $(".innovation_study_sensation").slideDown();
+    });
+
+    $(".innovation_study_hide").click(function() {
+        $(".innovation_study").removeClass("active");
+        $(".innovation_study_sensation").slideUp();
+    });
+
     $('.open-popup').magnificPopup({  
         type: 'inline',
         preloader: false,
