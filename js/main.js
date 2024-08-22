@@ -41,6 +41,16 @@ $(document).ready(function() {
         $(".innovation_stepone_hide").slideUp();
     });
 
+    $(".innovation_prevention_mob_open").click(function() {
+        $(".innovation_prevention").addClass("mob_active");
+        $(".innovation_prevention_mob_hide").slideDown();
+    });
+
+    $(".innovation_prevention_mob_close").click(function() {
+        $(".innovation_prevention").removeClass("mob_active");
+        $(".innovation_prevention_mob_hide").slideUp();
+    });
+
     $(".innovation_prevention_open").click(function() {
         $(".innovation_prevention").addClass("active");
         $(".innovation_prevention_hide").slideDown();

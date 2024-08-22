@@ -1796,7 +1796,117 @@
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.innovation_prevention_open {
+.innovation_prevention_mob_hide {
+  display: none;
+  padding-top: 30px;
+  position: relative;
+}
+.innovation_prevention_mob_hide h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.9);
+}
+.innovation_prevention_mob_hide_row_img img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 20px;
+  width: 100%;
+}
+.innovation_prevention_mob_hide_row_img_sidebar {
+  display: none;
+}
+.innovation_prevention_mob_hide_row_text_item {
+  background: rgb(232, 241, 255);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 16px;
+}
+.innovation_prevention_mob_hide_row_text_item_head span {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: #000;
+}
+.innovation_prevention_mob_hide_row_text_item_head h5 {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 12px;
+}
+.innovation_prevention_mob_hide_row_text_item p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 12px;
+}
+.innovation_prevention_mob_hide_sidebar {
+  background: rgb(246, 247, 250);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 30px;
+}
+.innovation_prevention_mob_hide_sidebar p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
+.innovation_prevention_mob_hide_sidebar_main {
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 38px;
+}
+.innovation_prevention_mob_hide_sidebar a {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+}
+.innovation_prevention_mob_hide_sidebar a img {
+  border-radius: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.innovation_prevention_mob_hide_link {
+  padding: 18px 22px;
+  background: rgb(28, 126, 123);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  display: block;
+  color: #fff;
+  border-radius: 60px;
+  margin-top: 40px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.innovation_prevention_mob_hide_link:hover {
+  background: #105352;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.innovation_prevention_mob_open {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -1807,10 +1917,40 @@
   display: inline-block;
   cursor: pointer;
 }
+.innovation_prevention_mob_open:hover {
+  text-decoration: none;
+}
+.innovation_prevention_mob_close {
+  display: none;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 16px;
+  color: rgb(45, 104, 152);
+  text-decoration: underline;
+  display: none;
+  cursor: pointer;
+}
+.innovation_prevention_mob_close:hover {
+  text-decoration: none;
+}
+.innovation_prevention_open {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-top: 16px;
+  color: rgb(45, 104, 152);
+  text-decoration: underline;
+  display: none;
+  cursor: pointer;
+}
 .innovation_prevention_open:hover {
   text-decoration: none;
 }
 .innovation_prevention_close {
+  display: none;
   font-family: "Lato", sans-serif;
   font-size: 15px;
   font-weight: 600;
@@ -1828,6 +1968,12 @@
   display: none;
 }
 .innovation_prevention.active .innovation_prevention_close {
+  display: inline-block;
+}
+.innovation_prevention.mob_active .innovation_prevention_mob_open {
+  display: none;
+}
+.innovation_prevention.mob_active .innovation_prevention_mob_close {
   display: inline-block;
 }
 .innovation_choice {
@@ -3431,6 +3577,9 @@
   .innovation_prevention_hide_sidebar {
     margin-top: 0px;
     bottom: 128px;
+  }
+  .innovation_prevention_open {
+    display: inline-block;
   }
   .innovation_choice h3 {
     margin-top: 0px;
