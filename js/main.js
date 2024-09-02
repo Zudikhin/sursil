@@ -121,6 +121,23 @@ $(document).ready(function() {
         $(".innovation_study_sensation").slideUp();
     });
 
+    $(".innovation_walk_pain_main_points_hero_item button").click(function() {
+        var attr = $(this).attr("data-id");
+        $(".innovation_walk_pain_main_points_hero_item button").removeClass("active");
+        $(this).addClass("active");
+        $(".innovation_walk_pain_main_points_mob_item").removeClass("active");
+        $(`#${attr}`).addClass("active");
+      });
+
+    $('.open_youtube').magnificPopup({
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
+    });
+
     $('.open-popup').magnificPopup({  
         type: 'inline',
         preloader: false,
