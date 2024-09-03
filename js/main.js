@@ -129,13 +129,8 @@ $(document).ready(function() {
         $(`#${attr}`).addClass("active");
       });
 
-    $('.open_youtube').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
-        fixedContentPos: false
+      $(".open_youtube").click(function() {
+        $(this).addClass("active");
     });
 
     $('.open-popup').magnificPopup({  
